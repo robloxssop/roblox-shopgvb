@@ -1,0 +1,330 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-attachment: fixed;
+	background-repeat: no-repeat ;
+	background-size: 100%;
+	background-image: url("../img/bg.jpg");
+	font-family: 'Kanit', sans-serif;
+}
+
+.swal2-shown {
+	overflow-y: auto;
+}
+
+.bg-top-home {
+	position: absolute;
+	top: 0;
+	left: -17%;
+	width: 65%;
+	height: 100%;
+	z-index: -1;
+	-webkit-transform: skewX(
+		-7deg
+		);
+	-moz-transform: skewX(-7deg);
+	-ms-transform: skewX(-7deg);
+	-o-transform: skewX(-7deg);
+	transform: skewX(
+		-7deg
+		);
+}
+
+.w-40-rp {
+	width: 40%;
+}
+
+.d-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 60px;
+	grid-row-gap: 60px;
+}
+
+.d-grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: auto auto auto auto;
+}
+
+.d-grid-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.warning-set {
+	color: #fb3;
+	background: #212121;
+}
+
+.warning-set:hover {
+	color: #fff;
+	background: #fb3;
+}
+
+.set-rp-rg {
+	width: 50%;
+}
+
+.danger-set {
+	color: #212121;
+	background: #ff3547;
+}
+
+.danger-set:hover {
+	color: #ff3547;
+	background: #f1f1;
+}
+
+.text-set-nav {
+	color: #000;
+	border-radius: 2px;
+	padding: 5px;
+}
+
+.text-set-nav:hover {
+	color: #000;
+	background: rgba(66, 66, 66, 0.26);
+}
+
+#manu-nav{
+	display: none;
+	top: 45px;
+	border-bottom: 2px solid gray;
+	text-align: center;
+}
+
+.de-nav {
+	padding: 20px 0px;
+	list-style-type: none;
+}
+
+.c-nav {
+	color: #454545;
+	font-size: 17px;
+}
+
+.c-nav:hover {
+	color: #fb3;
+}
+
+.res-i:hover {
+	color: #fb3;
+}
+
+.bg-dark {
+	background-color: #212121 !important;
+}
+
+.card-shop {
+	border: 2px solid #67736b;
+	border-radius: 8px;
+	box-shadow: 0 0 10px 1px #67736b;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.card-shop:hover {
+	transform: scale(1.04);
+}
+
+.card-topup {
+	border: 2px solid #67736b;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 1px #67736b;
+}
+
+.card-topup:hover {
+	transform: scale(1.04);
+}
+
+.topup-gift {
+	height: 120px;
+}
+
+.shop-img {
+	height: 300px;
+}
+
+.nav-left {
+	height: 100%;
+	width: 300px;
+	position: absolute;
+}
+
+.d-link {
+	color: #fff;
+}
+
+.d-link:hover {
+	color: #adadad;
+}
+
+#area {
+	position: absolute;
+	width: 100%;
+}
+
+.icon-nav {
+	border: 2px solid rgba(255,255,255,.4);
+	top: 10px;
+	right: 10px;
+	position: absolute;
+	border-radius: 2px;
+	width: 28px;
+}
+
+.navadmin-fixed {
+	top: 0;
+	position: fixed;
+    z-index: 1030;
+}
+
+.img-rs {
+	margin-top: 50px;
+	height: 350px;
+	width: 90%;
+}
+
+.img-res {
+	margin-top: 45px;
+	height: 350px;
+}
+
+.d-grid-2-rs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.d-grid-575 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.img-shop {
+	border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    position: relative;
+    min-height: 245px;
+}
+
+.img-shop img {
+	width: 100%;
+}
+
+.d-grid-5 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+@media (max-width: 1199px) {
+	.d-grid-5 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 991px) {
+	body {
+		background-size: 1000px;
+	}
+	.bg-top-home {
+		display: none;
+	}
+
+	.w-40-rp {
+		width: 100%;
+	}
+
+	.d-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.set-rp-rg {
+		width: 100%;
+	}
+
+	.d-grid-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.d-grid-2-rs {
+		grid-template-columns: 1fr;
+	}
+	.d-grid-5 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+
+@media (max-width: 767px) {
+	.d-grid-2 {
+		grid-template-columns: 1fr;
+	}
+	.d-grid-5 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+@media (max-width: 575px) {
+	.d-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.topup-gift {
+		height: 80px;
+	}
+
+	.shop-img {
+		height: 250px;
+	}
+
+	.d-grid-4 {
+		grid-template-columns: 1fr;
+	}
+
+	.img-rs {
+		height: 300px;
+	}
+
+	.img-res {
+		height: 250px;
+	}
+
+	.d-grid-575 {
+		grid-template-columns: 1fr;
+	}
+	.d-grid-5 {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.text-none {
+		display: none;
+	}
+}
+
+@media (max-width: 379px) {
+	.text-none-sm {
+		display: none;
+	}
+	.img-rs {
+		height: 250px;
+	}
+}
+
+.btn-outline-success .btn-round:hover {
+	background-color: green;
+}
